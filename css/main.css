@@ -47,5 +47,5 @@ ul.posts li {
 div#headimage {
   float:left-side;
   display: block;
-  max-width: 30%;
+  max-width: 100%;
 }
