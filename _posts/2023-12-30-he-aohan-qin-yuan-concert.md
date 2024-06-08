@@ -2,10 +2,12 @@
 layout: post
 title: "2023年《琴缘》音乐会"
 date: 2023-12-30
+excerpt_separator: <!--more-->
 ---
-![](/files/QinYuanConcert.png){:width="100%"}
+![](/files/QinYuanConcert.png){:width="70%"}
 
 Catch an Er Hu concert live at Festive Arts Theatre!
+<!--more-->
 
 Erhu Society (Singapore) will bring you a joyous performance with a mixed repertoire of classical, pop, local and ethnic styles of Chinese music. Wishing everyone a Happy New Year!
 
