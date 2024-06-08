@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 ## [About/](/about)执委
-![](/files/exco.jpg)
+![](/files/exco.jpg){:width="50%"}
 - 会长：王方亮
 - 常务副会长：翁凤玫
 - 副会长：刘智乐
