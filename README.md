@@ -1,1 +1,1 @@
-**sgerhusoceity.github.io**
+**sgerhusociety.github.io**
