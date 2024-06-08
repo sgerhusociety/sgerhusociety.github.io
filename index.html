@@ -4,5 +4,19 @@ title: 新加坡二胡学会
 ---
 <div class="blurb">
 	<h1>新加坡二胡学会</h1>
-	<p><a href="/about">Our recent activities...</a></p>
+
+	{% for post in site.posts %}
+	{% if post.excerpt %}
+
+	<li>
+		<span>{{ post.date | date_to_string }}</span>
+		 » 
+		 <a href="{{ post.url }}" title="{{ post.title }}">
+			{{ post.title }}</a>
+    {{ post.excerpt }}
+	</li>
+	<hr>
+	{% endif %}
+	{% endfor %}
 </div><!-- /.blurb -->
+<!--more-->

@@ -10,11 +10,9 @@
 
     {% for page in site.pages %}
     {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
     <url>
         <loc>https://sgerhusociety.github.io{{ page.url | remove: 'index.html' }}</loc>
     </url>
-    {% endif %}
     {% endif %}
     {% endfor %}
 </urlset>

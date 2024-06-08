@@ -1,5 +1,6 @@
 name: Singapore Erhu Society Official Website
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+excerpt_separator: <!--more-->
 gems:
   - jekyll-sitemap
