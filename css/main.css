@@ -2,6 +2,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    font-size: 100%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -25,8 +26,8 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.1em;
     color: #333;
 }
 footer {
@@ -39,8 +40,14 @@ ul.posts {
     margin-right: 0px;
     font-size: 1.3em;
 }
-
+ul.posts p { 
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #333;
+}
 ul.posts li {
+    margin-left: 0px; 
+    margin-right: 0px;
     list-style:circle;
 }
 
@@ -65,4 +72,9 @@ div#headimage {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
 }

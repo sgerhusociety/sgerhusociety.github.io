@@ -4,7 +4,7 @@ title: "2023年《琴缘》音乐会"
 date: 2023-12-30
 excerpt_separator: <!--more-->
 ---
-![](/files/QinYuanConcert.png){:width="70%"}
+![](/files/QinYuanConcert.png){:width="70%" .center-image}
 
 Catch an Er Hu concert live at Festive Arts Theatre!
 <!--more-->
