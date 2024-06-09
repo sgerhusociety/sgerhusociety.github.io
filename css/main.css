@@ -37,16 +37,32 @@ footer {
 ul.posts { 
     margin-left: 0px; 
     margin-right: 0px;
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 ul.posts li {
     list-style:circle;
 }
 
-div#headimage {
-  float:left-side;
+div#logoimage {
+  float: left-side;
   display: block;
-  max-width: 100%;
-  margin-left: 0px; 
+  max-width: 20%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+div#headimage {
+    float:left-side;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
