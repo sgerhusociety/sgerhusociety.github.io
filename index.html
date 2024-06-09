@@ -7,15 +7,16 @@ title: 新加坡二胡学会
 
 	{% for post in site.posts %}
 	{% if post.excerpt %}
-
-	<li>
-		<span>{{ post.date | date_to_string }}</span>
+	<hr>
+	<ul class="posts">
+		<li>
+			<span>{{ post.date | date_to_string }}</span>
 		 » 
 		 <a href="{{ post.url }}" title="{{ post.title }}">
 			{{ post.title }}</a>
         {{ post.excerpt }}
-	</li>
-	<hr>
+		</li>
+	</ul>
 	{% endif %}
 	{% endfor %}
 </div><!-- /.blurb -->
