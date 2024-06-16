@@ -3,7 +3,7 @@ layout: post
 title: "新中建交30年 两地二胡演奏家齐奏《光明行》"
 date: 2020-05-05
 ---
-[视频链接](https://www.facebook.com/sgerhusociety/videos/270711257451948)
+{% include facebookPlayer.html id="270711257451948" %}
 
 冬天已至，春天也不远了，这场冠病疫情的寒冬正在世界各地回暖。
 
