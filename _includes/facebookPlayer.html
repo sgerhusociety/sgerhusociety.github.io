@@ -5,14 +5,20 @@
 
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<script async defer
+    crossorigin="anonymous" 
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
+    nonce="YNrdGZsj">
+</script>
 
 <!-- Your embedded video player code -->
 <div 
     class="fb-video" 
     data-href="https://www.facebook.com/watch/?v={{ include.id }}"
     data-width="auto"
-    width="700" 
-    height="480"
+    data-height="auto"
+    width=""
+    height=""
+    data-show-text="false"
     data-allowfullscreen="true">
 </div>
