@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2023年《琴缘》音乐会"
+title: "《琴缘》音乐会"
 date: 2023-12-30
 excerpt_separator: <!--more-->
 ---

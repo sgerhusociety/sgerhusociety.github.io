@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "2023年小型观摩会"
+title: "小型观摩会"
 date: 2024-03-23
 excerpt_separator: <!--more-->
 ---
+![](/files/2024-small-seminar/1.jpg){:max-width=70% .center-image}
+
 二胡学会于3月10日举办了一场小规模的观摩会，旨在为会员提供展示自我、学习交流的机会，促进技艺提升。尽管规模较小，但活动内容丰富，生动展现了会员们多样化的才华和水平。
 <!--more-->
 
@@ -16,3 +18,5 @@ excerpt_separator: <!--more-->
 观摩会表演项目结束后， 表演者都依依不舍， 纷纷向在场的几位老师们询问意见、讨教，都希望自己可以在琴艺上更上一层楼。
 
 我们坚信，在未来的学习与交流中，我们会更加努力，不断提升自我，共同推动二胡音乐的发展。
+
+![](/files/2024-small-seminar/2.jpg){:max-width=70% .center-image}
