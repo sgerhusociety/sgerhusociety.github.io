@@ -11,10 +11,9 @@ title: 新加坡二胡学会
 
 			<span>{{ post.date | date_to_string }}</span>
 			» 
-			<a href="{{ post.url }}" title="{{ post.title }}">
-				{{ post.title }}
-			</a>
-			{{ post.excerpt }}
+			{{ post.title }}
+			{{ post.content | split: site.excerpt_separator | first }}
+			<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
 		{% endif %}
 	{% endfor %}
 </div><!-- /.blurb -->
