@@ -2,7 +2,7 @@
 layout: default
 title: About
 ---
-## [About/](/about)执委
+## [About/](./index.html)执委
 
 ![Committee](/files/exco.jpg){:width="70%"}
 
