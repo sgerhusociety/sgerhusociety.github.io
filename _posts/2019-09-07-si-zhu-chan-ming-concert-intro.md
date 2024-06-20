@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "《丝竹蝉鸣》音乐会"
-date: 2019-09-08
+title: "《丝竹蝉鸣》音乐会预告"
+date: 2019-09-07
 ---
 ![](/files/sizhuchanming.jpg){:max-width=70% .center-image}
 
