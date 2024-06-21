@@ -13,57 +13,27 @@ date: 2015-06-28
 
 选手们先进行了第一轮复赛曲目的演奏，每人限时六分钟。
 
-<figure>
-  <img src="/files/hz_exercise/kai-ming.webp" alt="my alt text" class="center-image"/>
-  <figcaption>开铭演奏《听松》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/kai-ming.webp" caption="开铭演奏《听松》" %}
 
-<figure>
-  <img src="/files/hz_exercise/yongfang.webp" alt="my alt text" class="center-image"/>
-  <figcaption>永芳演奏《病中吟》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/yongfang.webp" caption="永芳演奏《病中吟》" %}
 
-<figure>
-  <img src="/files/hz_exercise/jiaqin.webp" alt="my alt text" class="center-image"/>
-  <figcaption>嘉沁演奏《翻身歌》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/jiaqin.webp" caption="嘉沁演奏《翻身歌》" %}
 
-<figure>
-  <img src="/files/hz_exercise/liangchen.webp" alt="my alt text" class="center-image"/>
-  <figcaption>良辰演奏《阳光照耀着塔什库尔干》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/liangchen.webp" caption="良辰演奏《阳光照耀着塔什库尔干》" %}
 
-<figure>
-  <img src="/files/hz_exercise/liangchen.webp" alt="my alt text" class="center-image"/>
-  <figcaption>程程演奏《第一二胡狂想曲》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/cc.webp" caption="程程演奏《第一二胡狂想曲》" %}
 
 休息过后，选手们又进行了第二轮决赛指定曲目的演奏。
 
-<figure>
-  <img src="/files/hz_exercise/kai-ming-2.webp" alt="my alt text" class="center-image"/>
-  <figcaption>开铭演奏海外组指定曲目《第二二胡狂想曲》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/kai-ming-2.webp" caption="开铭演奏海外组指定曲目《第二二胡狂想曲》" %}
 
-<figure>
-  <img src="/files/hz_exercise/yongfang-2.webp" alt="my alt text" class="center-image"/>
-  <figcaption>永芳演奏海外组指定曲目《一枝花》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/yongfang-2.webp" caption="永芳演奏海外组指定曲目《一枝花》" %}
 
-<figure>
-  <img src="/files/hz_exercise/jiaqin-2.webp" alt="my alt text" class="center-image"/>
-  <figcaption>嘉沁演奏海外组指定曲目《光明行》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/jiaqin-2.webp" caption="嘉沁演奏海外组指定曲目《光明行》" %}
 
-<figure>
-  <img src="/files/hz_exercise/liangchen-2.webp" alt="my alt text" class="center-image"/>
-  <figcaption>良辰演奏海外组指定曲目《一枝花》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/liangchen-2.webp" caption="良辰演奏海外组指定曲目《一枝花》" %}
 
-<figure>
-  <img src="/files/hz_exercise/cc-2.webp" alt="my alt text" class="center-image"/>
-  <figcaption>程程演奏成年组指定曲目《山村小景》</figcaption>
-</figure>
+{% include center-caption-image.html src="/files/hz_exercise/cc-2.webp" caption="程程演奏成年组指定曲目《山村小景》" %}
 
 选手们演奏完毕之后，王方亮老师对选手们的发挥进行了详细的点评，并指导了选手们如何在台上克服紧张心理以及平时应该如何更有效地练琴，使在场听众——其他二胡学会的成员也能从中获益
 
