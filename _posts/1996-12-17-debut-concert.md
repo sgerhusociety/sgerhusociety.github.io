@@ -3,6 +3,7 @@ layout: post
 title: "Erhu Society Stages Debut Concert"
 date: 1996-12-17
 ---
+![](/files/debut-concert.png){:max-width=70% .center-image}
 **Wong Chee Meng**
 
 The year-old Erhu Society, formed by lovers of the two-string Chinese instrument, will stage its debut performance at the Victoria Concert Hall tonight.
@@ -52,5 +53,3 @@ Another highlight in the programme is a medley of 11 well-known erhu tunes, acco
 “It is challenging because the computer will not keep time with you if you do not keep time with it,” said Miss Han, who is a member of the ensemble which will perform the medley.
 
 Source: The Straits Times, December 17, 1996, Community.
-
-![](/files/debut-concert.png){:max-width=70% .center-image}
