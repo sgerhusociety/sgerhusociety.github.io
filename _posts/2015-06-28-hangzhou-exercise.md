@@ -21,7 +21,7 @@ date: 2015-06-28
 
 {% include center-caption-image.html src="/files/hz_exercise/liangchen.webp" caption="良辰演奏《阳光照耀着塔什库尔干》" %}
 
-{% include center-caption-image.html src="/files/hz_exercise/cc.webp" caption="程程演奏《第一二胡狂想曲》" %}
+{% include center-caption-image.html src="/files/hz_exercise/cc.webp" caption="程琛演奏《第一二胡狂想曲》" %}
 
 休息过后，选手们又进行了第二轮决赛指定曲目的演奏。
 
@@ -33,7 +33,7 @@ date: 2015-06-28
 
 {% include center-caption-image.html src="/files/hz_exercise/liangchen-2.webp" caption="良辰演奏海外组指定曲目《一枝花》" %}
 
-{% include center-caption-image.html src="/files/hz_exercise/cc-2.webp" caption="程程演奏成年组指定曲目《山村小景》" %}
+{% include center-caption-image.html src="/files/hz_exercise/cc-2.webp" caption="程琛演奏成年组指定曲目《山村小景》" %}
 
 选手们演奏完毕之后，王方亮老师对选手们的发挥进行了详细的点评，并指导了选手们如何在台上克服紧张心理以及平时应该如何更有效地练琴，使在场听众——其他二胡学会的成员也能从中获益
 
