@@ -8,15 +8,15 @@ date: 2016-03-05
 
 今年的比赛将在韩国的首尔举行，于是学会于3月5日下午为准备出战韩国的会员们举行了热身小汇报。今年参加比赛的选手都是年龄在11到15岁之间的小会员。别看他们年龄小，可是都已经是学琴五年以上的老队员了~~~ 学会的副会长翁凤梅老师也莅临的小汇报，为选手们加油打气，更对他们的表现进行了评价，也提出了很多专业方面的宝贵意见，使小选手们和到场的观众都受益匪浅。
 
-![](/files/korea-1-min.png){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-1-min.png){:max-width=70% .center-image}
 
-![](/files/korea-2-min.png){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-2-min.png){:max-width=70% .center-image}
 
-![](/files/korea-3-min.png){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-3-min.png){:max-width=70% .center-image}
 
-![](/files/korea-4-min.png){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-4-min.png){:max-width=70% .center-image}
 
-![](/files/korea-5-min.png){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-5-min.png){:max-width=70% .center-image}
 
 ![](/files/korea-6-min.jpg){:max-width=70% .center-image}
 
