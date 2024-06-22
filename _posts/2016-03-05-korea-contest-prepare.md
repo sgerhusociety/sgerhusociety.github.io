@@ -18,6 +18,6 @@ date: 2016-03-05
 
 ![](/files/2016-03-korea-contest-prepare/korea-5-min.png){:max-width=70% .center-image}
 
-![](/files/korea-6-min.jpg){:max-width=70% .center-image}
+![](/files/2016-03-korea-contest-prepare/korea-6-min.jpg){:max-width=70% .center-image}
 
 在此小编衷心祝愿孩子们在这次比赛中都能发挥出最好的实力，同时通过比赛能让琴技更上一层楼。无论结果如何，都要享受努力拼搏以及比赛的过程，把最好的自己展示给韩国的观众们，把诚意放在演奏当中，感受音乐也享受音乐。我们在新加坡等你们凯旋归来哟~
