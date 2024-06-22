@@ -2,7 +2,6 @@
 layout: post
 title: "《琴缘》音乐会圆满成功"
 date: 2024-01-10
-excerpt_separator: <!--more-->
 ---
 
 {% include facebookPlayer.html id="402926652162571" %}
