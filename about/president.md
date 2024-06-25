@@ -20,7 +20,7 @@ title: About
 
 王君的演奏热情奔放，细腻委婉，既有北方风格的粗犷，又有南方风格的典雅洒脱。其扎实的功底，独特的音色，淋漓尽致的表演曾多次受到音乐权威人士的赞扬和赏识。
 
-王君发行出版了“秦腔主题随想曲”，“兰花花叙事曲”，“二泉映月”“王方亮二胡精选”等录音专辑和激光唱片。王君现致力于本地的二胡教学和华乐的普及工作，学生遍及各国人士，为推广华乐做出了贡献。
+王君发行出版了“秦腔主题随想曲”、“兰花花叙事曲”、“二泉映月”、“王方亮二胡精选”等录音专辑和激光唱片。王君现致力于本地的二胡教学和华乐的普及工作，学生遍及各国人士，为推广华乐做出了贡献。
 
 Wang Fang Liang is an outstanding Erhu performer and a highly respected member of the Chinese music community.  He is the Honorary Director of the Chinese Folk Music Association (China), the Honorary Advisor of the Erhu Society of China, and a member of the Chinese Musicians’ Association (China).  Now based in Singapore, Wang teaches the Erhu at the Music Department of the Nanyang Academy of Fine Arts, and the Gifted Young Chinese Instrumentalists Course at its School of Young Talents.  He is also the President of the Erhu Society (Singapore).
 
