@@ -4,7 +4,7 @@ title: About
 ---
 ## [About/](./index.html)执委
 
-![Committee](/files/exco.jpg){:width="70%"}
+![Committee](/files/committee/1.jpg){:max-width="70%" .center-image}
 
 - 会长：王方亮
 - 常务副会长：翁凤玫
