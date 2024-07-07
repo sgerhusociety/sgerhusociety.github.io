@@ -2,7 +2,7 @@
 layout: default
 title: 学会顾问
 ---
-## [About/](./index.html)学会顾问
+## 学会顾问
 
 ### 海外艺术顾问 (按拼音排列)
 

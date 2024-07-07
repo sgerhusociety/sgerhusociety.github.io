@@ -2,7 +2,7 @@
 layout: default
 title: About
 ---
-## [About/](./index.html)执委
+## 执委
 
 ![Committee](/files/committee/1.jpg){:max-width="70%" .center-image}
 

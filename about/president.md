@@ -2,7 +2,7 @@
 layout: default
 title: About
 ---
-## [About/](./index.html)会长简介
+## 会长简介
 
 ![President](/files/wang-fang-liang.jpg)
 
