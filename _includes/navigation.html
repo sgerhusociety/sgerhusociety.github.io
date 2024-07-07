@@ -26,10 +26,10 @@
                 <a href="{{ item.link }}"
                 {% if item.link == "/" %}
                     {% if page.url == "/" %}
-                        style="color: rgb(6, 46, 53);"
+                        class="current"
                     {% endif %}
                 {% elsif page.url contains item.link %}
-                    style="color: rgb(6, 46, 53);"
+                    class="current"    
                 {% endif %}>
                     {{ item.name }}
                 </a>
