@@ -9,9 +9,9 @@ title: 新加坡二胡学会
 		{% if post.excerpt %}
 			<hr>
 
-			<span>{{ post.date | date_to_string }}</span>
+			<span class="blog-in-home">{{ post.date | date_to_string }}</span>
 			» 
-			{{ post.title }}
+			<span class="blog-in-home">{{ post.title }}</span>
 			{{ post.content | split: site.excerpt_separator | first }}
 			<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
 		{% endif %}
