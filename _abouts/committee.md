@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: 执委
 ---
 ## 执委
 

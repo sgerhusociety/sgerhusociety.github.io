@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: 学会宗旨
 ---
 ## 学会宗旨
 

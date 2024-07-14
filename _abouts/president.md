@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: 会长简介
 ---
 ## 会长简介
 

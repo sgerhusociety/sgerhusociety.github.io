@@ -2,5 +2,20 @@ name: Singapore Erhu Society Official Website
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: <!--more-->
+collections:
+  abouts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 gems:
   - jekyll-sitemap
