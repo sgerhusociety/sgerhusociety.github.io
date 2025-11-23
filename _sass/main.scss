@@ -6,6 +6,26 @@ body {
     line-height: 1.6;
     background-color: #faf6f0;
     color: #2c3e50;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent text size adjustment on orientation change */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    /* Prevent callout on long-press */
+    -webkit-touch-callout: default;
+    /* Prevent text selection on double-tap */
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+img {
+    /* Prevent image dragging on mobile */
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .container {
@@ -20,6 +40,13 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+/* Remove sticky nav on mobile devices */
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
 }
 
 nav ul {
@@ -161,9 +188,14 @@ ul.posts p {
 
 div#logoimage {
     text-align: center;
-    padding: 20px 0;
-    max-width: 200px;
+    padding: 15px 0 10px;
+    max-width: 120px;
     margin: 0 auto;
+}
+
+div#logoimage img {
+    width: 100%;
+    height: auto;
 }
 
 div#headimage {
@@ -460,54 +492,226 @@ hr[style*="border-width:2px"] {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    
+
+/* iPad and smaller tablets */
+@media (max-width: 1024px) {
     .container {
         padding: 15px;
     }
     
+    .post, .post-preview {
+        padding: 25px;
+    }
+}
+
+/* Mobile devices (iPhone and similar) */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    /* Improve logo sizing on mobile */
+    div#logoimage {
+        max-width: 100px;
+        padding: 10px 0;
+    }
+    
+    /* Better header image on mobile */
+    div#headimage {
+        margin-bottom: 20px;
+    }
+    
+    /* Mobile-friendly navigation */
     nav ul {
         flex-direction: column;
         align-items: stretch;
     }
     
+    nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
     nav ul li a {
         padding: 12px 20px;
         text-align: center;
+        font-size: 15px;
     }
     
+    /* Better typography for mobile */
     h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
+        line-height: 1.3;
     }
     
     h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
+        line-height: 1.3;
     }
     
-    .blurb, .post {
+    h3 {
+        font-size: 1.15em;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+    
+    /* Mobile-friendly post cards */
+    .post-preview {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .post {
         padding: 20px;
     }
     
+    .post-header {
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title {
+        font-size: 1.3em;
+    }
+    
+    /* Better navigation buttons on mobile */
     .PageNavigation {
         flex-direction: column;
+        gap: 10px;
+        margin: 30px 0;
+    }
+    
+    .PageNavigation a {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 15px;
     }
     
     .PageNavigation .prev,
     .PageNavigation .next {
         text-align: center;
     }
+    
+    /* Better read more button */
+    .read-more {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+    
+    /* Footer adjustments */
+    footer {
+        padding: 20px 0;
+    }
+    
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    /* Social media section */
+    .social-media-section {
+        padding: 20px;
+    }
+    
+    /* Better image handling */
+    .post-content img {
+        margin: 15px 0;
+    }
 }
 
+/* iPhone SE and smaller phones */
 @media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 8px;
+    }
+    
     h1 {
+        font-size: 1.4em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    .blurb > h1 {
         font-size: 1.5em;
     }
     
     nav ul li a {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    
+    .post-preview, .post {
+        padding: 15px;
+    }
+    
+    .post-date {
+        font-size: 0.9em;
+    }
+    
+    .PageNavigation a {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+/* iPhone landscape mode */
+@media (max-width: 896px) and (orientation: landscape) {
+    nav {
+        position: relative;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li a {
         padding: 10px 15px;
-        font-size: 0.95em;
+        font-size: 14px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+    /* Ensure all clickable elements are at least 44x44px (Apple's recommendation) */
+    a, button, .read-more {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        min-height: 48px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .post-preview:hover {
+        transform: none;
     }
 }
