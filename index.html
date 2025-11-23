@@ -7,18 +7,26 @@ title: 新加坡二胡学会
 
 	{% for post in site.posts limit:10 %}
 		{% if post.excerpt %}
-			<hr>
-
-			<span class="blog-in-home">{{ post.date | date_to_string }}</span>
-			» 
-			<span class="blog-in-home">{{ post.title }}</span>
-			{{ post.content | split: site.excerpt_separator | first }}
-			<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+			<article class="post-preview">
+				<div class="post-header">
+					<span class="blog-in-home post-date">📅 {{ post.date | date: "%Y年%m月%d日" }}</span>
+				</div>
+				<h2 class="post-title">
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				</h2>
+				<div class="post-excerpt">
+					{{ post.content | split: site.excerpt_separator | first }}
+				</div>
+				<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">阅读全文 →</a>
+			</article>
+			{% unless forloop.last %}
+				<hr class="post-divider">
+			{% endunless %}
 		{% endif %}
 	{% endfor %}
 </div><!-- /.blurb -->
 <hr style="border-width:2px">
-<div>
+<div class="social-media-section">
     {% include social-media.html %}	 
 </div>
 <!--more-->
