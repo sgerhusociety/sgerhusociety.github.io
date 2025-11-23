@@ -9,7 +9,7 @@ title: 新加坡二胡学会
 		{% if post.excerpt %}
 			<article class="post-preview">
 				<div class="post-header">
-					<span class="blog-in-home post-date">📅 {{ post.date | date: "%Y年%m月%d日" }}</span>
+					<span class="blog-in-home post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
 				</div>
 				<h2 class="post-title">
 					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
