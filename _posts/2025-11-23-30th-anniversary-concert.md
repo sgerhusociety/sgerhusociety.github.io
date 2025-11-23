@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "《琴韵三十载 · 薪火传新声》二胡学会30周年音乐会"
-date: 2025-11-23
+title: "《琴韵三十载 · 薪火传新声》二胡学会30周年音乐会预告"
+date: 2025-09-01
 ---
 ![](/files/2025-12-30th-anniversary/30th_Anniversary_Concert.jpg){:max-width=70% .center-image}
 
