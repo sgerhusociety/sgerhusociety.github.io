@@ -31,11 +31,38 @@
 			
 			</div><!-- /.container -->
 
+			<!-- Back to Top Button -->
+			<button id="backToTop" class="back-to-top" aria-label="返回顶部">
+				<span>↑</span>
+			</button>
+
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:sgerhusociety@yahoo.com.sg">📧 Email</a></li>
 					<li><a href="https://www.facebook.com/sgerhusociety">📘 Facebook</a></li>
 				</ul>
 			</footer>
+			
+			<script>
+				// Back to Top Button functionality
+				const backToTopButton = document.getElementById('backToTop');
+				
+				// Show/hide button based on scroll position
+				window.addEventListener('scroll', function() {
+					if (window.pageYOffset > 300) {
+						backToTopButton.classList.add('show');
+					} else {
+						backToTopButton.classList.remove('show');
+					}
+				});
+				
+				// Scroll to top when clicked
+				backToTopButton.addEventListener('click', function() {
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				});
+			</script>
 		</body>
 	</html>
