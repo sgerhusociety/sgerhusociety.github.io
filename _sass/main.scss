@@ -595,6 +595,107 @@ figcaption {
     .section-title {
         font-size: 1.5em;
     }
+    
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .blog-post-card {
+        padding: 20px;
+    }
+}
+
+/* Blog Page Styles */
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.page-header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.page-description {
+    font-size: 1.15em;
+    margin: 10px 0 5px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.page-description-en {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.blog-post-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #8b4513;
+}
+
+.blog-post-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.blog-post-card .post-meta {
+    margin-bottom: 10px;
+}
+
+.blog-post-card .post-date {
+    color: #666;
+    font-size: 0.95em;
+    font-weight: 600;
+}
+
+.blog-post-card .post-title {
+    margin: 10px 0 15px;
+    border: none;
+    padding: 0;
+    font-size: 1.6em;
+}
+
+.blog-post-card .post-title a {
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.blog-post-card .post-title a:hover {
+    color: #8b4513;
+}
+
+.blog-post-card .post-excerpt {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.read-more-link {
+    display: inline-block;
+    color: #8b4513;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+    color: #a0522d;
+    transform: translateX(5px);
 }
 
 .post {
