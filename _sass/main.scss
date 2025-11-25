@@ -578,19 +578,40 @@ img {
     height: auto;
 }
 
+/* Center paragraphs that only contain images */
+.post-content p:has(> img:only-child),
+article p:has(> img:only-child) {
+    text-align: center;
+    margin: 20px 0;
+}
+
 /* Post content images - center by default */
 .post-content img,
 article img,
 .container > p > img {
-    display: block;
+    display: inline-block;
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    vertical-align: middle;
 }
 
 .center-image {
     margin: 20px auto;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+figure {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+figure img {
     display: block;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -1345,10 +1366,11 @@ figcaption {
 }
 
 .post-content img {
-    display: block;
+    display: inline-block;
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    vertical-align: middle;
 }
 
 .post-content h2 {
