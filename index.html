@@ -2,8 +2,30 @@
 layout: default
 title: 新加坡二胡学会
 ---
+
+<!-- Hero Welcome Section -->
+<div class="hero-section">
+	<h1>欢迎来到新加坡二胡学会</h1>
+	<p class="tagline">传承二胡艺术 · 弘扬华乐文化</p>
+	<p class="hero-description">自1995年成立以来，我们致力于推广二胡艺术，为本地二胡爱好者提供交流与学习的平台。</p>
+</div>
+
+<!-- Featured Event Section -->
+<div class="featured-event">
+	<div class="featured-badge">🎉 重要活动</div>
+	<h2>《琴韵三十载 · 薪火传新声》二胡学会30周年音乐会</h2>
+	<p class="event-date">📅 2025年12月21日（星期日）晚上7:30</p>
+	<p class="event-venue">📍 SOTA Concert Hall</p>
+	<p class="event-description">三十年的风雨兼程，三十年的弦音不辍。诚邀您与我们一同见证，用心聆听三十年的共鸣与新声。</p>
+	<div class="event-actions">
+		<a href="https://sistic.com.sg/events/erhu1225" class="btn-primary" target="_blank">立即购票</a>
+		<a href="{{ site.baseurl }}/blog/2025/09/01/30th-anniversary-concert" class="btn-secondary">了解详情</a>
+	</div>
+</div>
+
+<!-- Latest News Section -->
 <div class="blurb">
-	<h1>新加坡二胡学会</h1>
+	<h2 class="section-title">最新动态</h2>
 
 	{% for post in site.posts limit:10 %}
 		{% if post.excerpt %}
@@ -11,9 +33,9 @@ title: 新加坡二胡学会
 				<div class="post-header">
 					<span class="blog-in-home post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
 				</div>
-				<h2 class="post-title">
+				<h3 class="post-title">
 					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-				</h2>
+				</h3>
 				<div class="post-excerpt">
 					{{ post.content | split: site.excerpt_separator | first }}
 				</div>
@@ -25,8 +47,10 @@ title: 新加坡二胡学会
 		{% endif %}
 	{% endfor %}
 </div><!-- /.blurb -->
-<hr style="border-width:2px">
+
+<!-- Social Media Section -->
 <div class="social-media-section">
+	<h2 class="section-title">关注我们</h2>
     {% include social-media.html %}	 
 </div>
 <!--more-->
