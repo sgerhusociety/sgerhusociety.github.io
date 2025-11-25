@@ -10,7 +10,7 @@ title: 活动动态 News & Events
 </div>
 
 <div class="blog-container">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:15 %}
     <article class="blog-post-card">
       <div class="post-meta">
         <span class="post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
@@ -26,5 +26,10 @@ title: 活动动态 News & Events
       {% endif %}
     </article>
   {% endfor %}
+</div>
+
+<div class="blog-archive-link">
+  <p>查看更多历史活动，请访问 <a href="/archive">📚 活动归档</a></p>
+  <p class="archive-link-en">For more past events, visit the <a href="/archive">Archive</a></p>
 </div>
   

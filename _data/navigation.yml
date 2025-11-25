@@ -1,8 +1,10 @@
 - name: 🏠 主页
   link: /
 - name: ℹ️ 关于
-  link: /about/
+  link: /about
 - name: 📰 动态
-  link: /blog/
+  link: /blog
+- name: 📚 归档
+  link: /archive
 - name: ✉️ 联系
   link: /contact-us

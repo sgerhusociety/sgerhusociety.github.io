@@ -1,14 +1,15 @@
-<nav>
+<nav role="navigation" aria-label="主导航 Main navigation">
     <ul>
          {% for item in site.data.navigation %}
             <li>
                 <a href="{{ item.link }}"
+                aria-label="{{ item.name | remove: '🏠 ' | remove: 'ℹ️ ' | remove: '📰 ' | remove: '📚 ' | remove: '✉️ ' }}"
                 {% if item.link == "/" %}
                     {% if page.url == "/" %}
-                        class="current"
+                        class="current" aria-current="page"
                     {% endif %}
                 {% elsif page.url contains item.link %}
-                    class="current"    
+                    class="current" aria-current="page"    
                 {% endif %}>
                     {{ item.name }}
                 </a>

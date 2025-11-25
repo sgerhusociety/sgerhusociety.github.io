@@ -5,7 +5,83 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 			<meta name="mobile-web-app-capable" content="yes">
 			<meta name="apple-mobile-web-app-status-bar-style" content="default">
-			<title>{{ page.title }}</title>
+			
+			<!-- SEO Meta Tags -->
+			<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡协会 (Singapore Erhu Society) 成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
+			<meta name="keywords" content="新加坡二胡协会,Singapore Erhu Society,二胡,华乐,中国音乐,erhu,Chinese music,新加坡,Singapore{% if page.tags %},{{ page.tags | join: ',' }}{% endif %}">
+			<meta name="author" content="Singapore Erhu Society">
+			<meta name="robots" content="index, follow">
+			
+			<!-- Open Graph / Facebook -->
+			<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+			<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+			<meta property="og:title" content="{% if page.title %}{{ page.title }} - 新加坡二胡协会{% else %}新加坡二胡协会 Singapore Erhu Society{% endif %}">
+			<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡协会成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
+			<meta property="og:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}header.jpg{% endif %}">
+			<meta property="og:locale" content="zh_CN">
+			<meta property="og:locale:alternate" content="en_US">
+			<meta property="og:site_name" content="新加坡二胡协会 Singapore Erhu Society">
+			{% if page.layout == 'post' %}
+			<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+			<meta property="article:author" content="Singapore Erhu Society">
+			{% if page.tags %}
+			{% for tag in page.tags %}
+			<meta property="article:tag" content="{{ tag }}">
+			{% endfor %}
+			{% endif %}
+			{% endif %}
+			
+			<!-- Twitter Card -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+			<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - 新加坡二胡协会{% else %}新加坡二胡协会 Singapore Erhu Society{% endif %}">
+			<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡协会成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
+			<meta name="twitter:image" content="{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}header.jpg{% endif %}">
+			
+			<!-- Structured Data (JSON-LD) -->
+			<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "{% if page.layout == 'post' %}Article{% else %}Organization{% endif %}",
+			  {% if page.layout == 'post' %}
+			  "headline": "{{ page.title }}",
+			  "datePublished": "{{ page.date | date_to_xmlschema }}",
+			  "dateModified": "{{ page.date | date_to_xmlschema }}",
+			  "author": {
+			    "@type": "Organization",
+			    "name": "Singapore Erhu Society",
+			    "url": "{{ site.url }}"
+			  },
+			  "publisher": {
+			    "@type": "Organization",
+			    "name": "Singapore Erhu Society",
+			    "logo": {
+			      "@type": "ImageObject",
+			      "url": "{{ site.url }}/assets/images/logo.png"
+			    }
+			  },
+			  "image": "{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}header.jpg{% endif %}",
+			  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"
+			  {% else %}
+			  "name": "Singapore Erhu Society",
+			  "alternateName": "新加坡二胡协会",
+			  "url": "{{ site.url }}",
+			  "logo": "{{ site.url }}/assets/images/logo.png",
+			  "description": "新加坡二胡协会成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。",
+			  "foundingDate": "1995",
+			  "contactPoint": {
+			    "@type": "ContactPoint",
+			    "contactType": "General Inquiries",
+			    "email": "sgerhusociety@gmail.com"
+			  },
+			  "sameAs": [
+			    "https://www.facebook.com/SgErhuSociety"
+			  ]
+			  {% endif %}
+			}
+			</script>
+			
+			<title>{% if page.title %}{{ page.title }} - 新加坡二胡协会{% else %}新加坡二胡协会 Singapore Erhu Society{% endif %}</title>
 			<!-- link to main stylesheet -->
 			<link rel="shortcut icon" type="image/x-icon" href="/myfavicon.ico">
 			<link rel="apple-touch-icon" href="/files/logo.jpg">
@@ -14,6 +90,9 @@
     		{% seo %}
 		</head>
 		<body>
+			<!-- Skip Navigation Link for Accessibility -->
+			<a href="#main-content" class="skip-link">跳转到主要内容 Skip to main content</a>
+			
       			<div id="logoimage">
       				<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" />
       			</div> <!-- /#logoimage -->
@@ -25,11 +104,12 @@
 			{% include analytics.html %}
 			
 			{% include navigation.html %}
-			<div class="container">
+			
+			<main id="main-content" role="main" class="container">
 			
 			{{ content }}
 			
-			</div><!-- /.container -->
+			</main><!-- /.container -->
 
 			<!-- Back to Top Button -->
 			<button id="backToTop" class="back-to-top" aria-label="返回顶部">
@@ -37,10 +117,44 @@
 			</button>
 
 			<footer>
-	    		<ul>
-	        		<li><a href="mailto:sgerhusociety@yahoo.com.sg">📧 Email</a></li>
-					<li><a href="https://www.facebook.com/sgerhusociety">📘 Facebook</a></li>
-				</ul>
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>新加坡二胡学会</h3>
+						<p class="footer-tagline">Singapore Erhu Society</p>
+						<p class="footer-description">传承二胡艺术 · 弘扬华乐文化</p>
+					</div>
+					
+					<div class="footer-section">
+						<h3>快速链接 Quick Links</h3>
+						<ul class="footer-links">
+							<li><a href="/">🏠 主页</a></li>
+							<li><a href="/about/">ℹ️ 关于</a></li>
+							<li><a href="/blog/">📰 动态</a></li>
+							<li><a href="/contact-us">✉️ 联系</a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-section">
+						<h3>联系我们 Contact</h3>
+						<ul class="footer-contact">
+							<li>
+								<a href="mailto:sgerhusociety@yahoo.com.sg">
+									<span class="footer-icon">📧</span> sgerhusociety@yahoo.com.sg
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/sgerhusociety" target="_blank">
+									<span class="footer-icon">📘</span> Facebook
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="footer-bottom">
+					<p>&copy; 1995-2025 新加坡二胡学会 Singapore Erhu Society. All rights reserved.</p>
+					<p class="footer-credits">成立于1995年 | Established in 1995</p>
+				</div>
 			</footer>
 			
 			<script>

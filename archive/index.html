@@ -1,0 +1,43 @@
+---
+layout: default
+title: 活动归档
+---
+
+<div class="archive-page">
+    <div class="archive-header">
+        <h1>📚 活动归档</h1>
+        <p class="archive-subtitle">Archive</p>
+        <p class="archive-description">按年份浏览协会历年活动与新闻</p>
+        <p class="archive-description-en">Browse our events and news by year</p>
+    </div>
+
+    <div class="archive-content">
+        {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+        
+        {% for year in postsByYear %}
+        <div class="archive-year-section">
+            <h2 class="archive-year">
+                <span class="year-number">{{ year.name }}</span>
+                <span class="post-count">({{ year.items | size }} 篇)</span>
+            </h2>
+            
+            <div class="archive-posts">
+                {% for post in year.items %}
+                <div class="archive-post-item">
+                    <span class="archive-post-date">{{ post.date | date: "%m月%d日" }}</span>
+                    <a href="{{ post.url }}" class="archive-post-title">{{ post.title }}</a>
+                    {% if post.excerpt %}
+                    <p class="archive-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="archive-stats">
+        <p>共 {{ site.posts | size }} 篇文章，跨越 {{ postsByYear | size }} 年</p>
+        <p class="archive-stats-en">{{ site.posts | size }} articles across {{ postsByYear | size }} years</p>
+    </div>
+</div>
