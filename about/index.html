@@ -1,11 +1,52 @@
 ---
 layout: default
-title: About
+title: 关于我们 About Us
 ---
-<div class="blurb">
-    <ul>
-        {% for about in site.about %}
-            <li><a href="{{ about.url }}">{{ about.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div><!-- /.blurb -->
+
+<div class="page-header">
+    <h1>关于我们</h1>
+    <p class="page-subtitle">About Us</p>
+    <p class="page-description">了解新加坡二胡学会的历史、宗旨与团队</p>
+    <p class="page-description-en">Learn about Singapore Erhu Society's history, mission, and team</p>
+</div>
+
+<div class="about-grid">
+    {% for about in site.about %}
+        <a href="{{ about.url }}" class="about-card">
+            <div class="about-card-icon">
+                {% if about.title contains '简介' %}
+                    📖
+                {% elsif about.title contains '宗旨' %}
+                    🎯
+                {% elsif about.title contains '执委' %}
+                    👥
+                {% elsif about.title contains '会长' and about.title contains '致辞' %}
+                    💬
+                {% elsif about.title contains '会长' %}
+                    🎓
+                {% elsif about.title contains '顾问' %}
+                    ⭐
+                {% else %}
+                    📌
+                {% endif %}
+            </div>
+            <h3>{{ about.title }}</h3>
+            <div class="about-card-description">
+                {% if about.title contains '简介' %}
+                    了解二胡学会的成立历史与发展
+                {% elsif about.title contains '宗旨' %}
+                    我们的使命、目标与核心价值
+                {% elsif about.title contains '执委' %}
+                    学会领导团队与执行委员会
+                {% elsif about.title contains '会长' and about.title contains '致辞' %}
+                    会长对学会发展的寄语
+                {% elsif about.title contains '会长' %}
+                    认识我们的会长
+                {% elsif about.title contains '顾问' %}
+                    学会顾问与资深导师
+                {% endif %}
+            </div>
+            <span class="about-card-arrow">→</span>
+        </a>
+    {% endfor %}
+</div>

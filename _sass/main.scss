@@ -618,8 +618,14 @@ figcaption {
 .page-header h1 {
     color: #fff;
     font-size: 2.5em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: none;
+}
+
+.page-subtitle {
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
 }
 
 .page-description {
@@ -696,6 +702,78 @@ figcaption {
 .read-more-link:hover {
     color: #a0522d;
     transform: translateX(5px);
+}
+
+/* About Page Styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #8b4513;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    border-left-width: 6px;
+}
+
+.about-card-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-card h3 {
+    color: #8b4513;
+    font-size: 1.4em;
+    margin: 10px 0 15px;
+    text-align: center;
+}
+
+.about-card-description {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.about-card-arrow {
+    color: #8b4513;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover .about-card-arrow {
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .about-card {
+        padding: 25px;
+    }
 }
 
 .post {
