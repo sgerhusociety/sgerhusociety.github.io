@@ -4,9 +4,11 @@ title: "Erhu Society Stages Debut Concert"
 date: 1996-12-17
 ---
 ![](/files/debut-concert.png){:max-width=70% .center-image}
+
 **Wong Chee Meng**
 
 The year-old Erhu Society, formed by lovers of the two-string Chinese instrument, will stage its debut performance at the Victoria Concert Hall tonight.
+<!--more-->
 
 The 100-member society was founded by erhu virtuoso Wang Fang Liang from China.
 
