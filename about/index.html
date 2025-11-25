@@ -14,13 +14,13 @@ title: 关于我们 About Us
     {% for about in site.about %}
         <a href="{{ about.url }}" class="about-card">
             <div class="about-card-icon">
-                {% if about.title contains '简介' %}
+                {% if about.title contains '简介' and about.title contains '学会' %}
                     📖
                 {% elsif about.title contains '宗旨' %}
                     🎯
                 {% elsif about.title contains '执委' %}
                     👥
-                {% elsif about.title contains '会长' and about.title contains '致辞' %}
+                {% elsif about.title contains '会长的话' or about.title contains '会长致辞' %}
                     💬
                 {% elsif about.title contains '会长' %}
                     🎓
@@ -32,13 +32,13 @@ title: 关于我们 About Us
             </div>
             <h3>{{ about.title }}</h3>
             <div class="about-card-description">
-                {% if about.title contains '简介' %}
+                {% if about.title contains '简介' and about.title contains '学会' %}
                     了解二胡学会的成立历史与发展
                 {% elsif about.title contains '宗旨' %}
                     我们的使命、目标与核心价值
                 {% elsif about.title contains '执委' %}
                     学会领导团队与执行委员会
-                {% elsif about.title contains '会长' and about.title contains '致辞' %}
+                {% elsif about.title contains '会长的话' or about.title contains '会长致辞' %}
                     会长对学会发展的寄语
                 {% elsif about.title contains '会长' %}
                     认识我们的会长
