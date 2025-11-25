@@ -323,24 +323,48 @@ figcaption {
 .hero-section h1 {
     color: #fff;
     font-size: 2.2em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: none;
+}
+
+.hero-subtitle {
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .tagline {
     font-size: 1.3em;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     color: #ffd700;
+    font-style: italic;
+}
+
+.tagline-en {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffe680;
     font-style: italic;
 }
 
 .hero-description {
     font-size: 1.1em;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-description-en {
+    font-size: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
 }
 
 /* Featured Event Section */
@@ -367,24 +391,47 @@ figcaption {
 
 .featured-event h2 {
     color: #8b4513;
-    margin: 15px 0;
+    margin: 15px 0 10px;
     border: none;
     padding: 0;
     font-size: 1.8em;
 }
 
+.event-title-en {
+    color: #6b3410;
+    margin: 0 0 20px;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: italic;
+}
+
 .event-date, .event-venue {
     font-size: 1.1em;
     color: #555;
-    margin: 8px 0;
+    margin: 8px 0 5px;
     font-weight: 500;
+}
+
+.event-date-en {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 8px;
+    font-style: italic;
 }
 
 .event-description {
     font-size: 1.05em;
     color: #444;
     line-height: 1.7;
-    margin: 20px 0;
+    margin: 20px 0 8px;
+    font-style: italic;
+}
+
+.event-description-en {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 20px;
     font-style: italic;
 }
 
@@ -504,12 +551,24 @@ figcaption {
         font-size: 1.6em;
     }
     
+    .hero-subtitle {
+        font-size: 1.1em;
+    }
+    
     .tagline {
         font-size: 1.1em;
     }
     
+    .tagline-en {
+        font-size: 1em;
+    }
+    
     .hero-description {
         font-size: 1em;
+    }
+    
+    .hero-description-en {
+        font-size: 0.95em;
     }
     
     .featured-event {
@@ -518,6 +577,10 @@ figcaption {
     
     .featured-event h2 {
         font-size: 1.4em;
+    }
+    
+    .event-title-en {
+        font-size: 1.1em;
     }
     
     .event-actions {
