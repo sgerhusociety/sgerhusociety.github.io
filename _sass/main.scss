@@ -1608,12 +1608,14 @@ hr[style*="border-width:2px"] {
     
     nav ul {
         gap: 3px;
-        padding: 3px;
+        padding: 4px;
     }
     
     nav ul li a {
         padding: 8px 10px;
         font-size: 13px;
+        white-space: nowrap;
+        font-family: 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
     }
     
     .post-preview, .post {
