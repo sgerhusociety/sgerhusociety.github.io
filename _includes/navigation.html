@@ -8,6 +8,14 @@
                     {% if page.url == "/" %}
                         class="current" aria-current="page"
                     {% endif %}
+                {% elsif item.link == "/blog" %}
+                    {% if page.url == "/blog/" or page.url == "/blog/index.html" %}
+                        class="current" aria-current="page"    
+                    {% endif %}
+                {% elsif item.link == "/archive" %}
+                    {% if page.url == "/archive/" or page.url == "/archive/index.html" %}
+                        class="current" aria-current="page"    
+                    {% endif %}
                 {% elsif page.url contains item.link %}
                     class="current" aria-current="page"    
                 {% endif %}>
