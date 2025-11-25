@@ -17,7 +17,7 @@ date: 2025-09-01
 
 <!--more-->
 
-📅 **时间**：2025年12月21日（星期天）7:30 PM
+🗓️ **时间**：2025年12月21日（星期天）7:30 PM
 
 📍 **地点**：SOTA Concert Hall
 
@@ -39,7 +39,7 @@ Themed "Three Decades of Erhu Resonance – A New Voice Lights the Flame", the c
 
 ✨ We warmly invite you to join us in witnessing this milestone, and to listen with heart to the resonance and new voices of thirty years.
 
-📅 **Date & Time**：21 December 2025 (Sunday), 7:30 PM
+🗓️ **Date & Time**：21 December 2025 (Sunday), 7:30 PM
 
 📍 **Venue**：SOTA Concert Hall
 
