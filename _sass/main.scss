@@ -42,13 +42,6 @@ nav {
     z-index: 100;
 }
 
-/* Remove sticky nav on mobile devices */
-@media (max-width: 768px) {
-    nav {
-        position: relative;
-    }
-}
-
 nav ul {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
     padding: 0;
@@ -527,22 +520,23 @@ hr[style*="border-width:2px"] {
     
     /* Mobile-friendly navigation */
     nav ul {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
     }
     
     nav ul li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    nav ul li:last-child {
         border-bottom: none;
+        flex: 0 0 auto;
     }
     
     nav ul li a {
-        padding: 12px 20px;
+        padding: 10px 12px;
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
+        border-radius: 5px;
     }
     
     /* Better typography for mobile */

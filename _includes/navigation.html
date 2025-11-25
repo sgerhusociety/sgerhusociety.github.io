@@ -1,28 +1,7 @@
 <nav>
     <ul>
-        <!--
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about/index.html">About</a></li>
-         -->
-        <!-- <li><a href="/social-media">Facebook</a></li> -->
-        <!--
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="/contact-us">Contact Us</a></li>
-         -->
          {% for item in site.data.navigation %}
             <li>
-                <!--
-                <a href="{{ item.link }}" 
-                {% if page.url != "/" and page.url contains item.link %}
-                    style="color: red;"
-                {% else %}
-                    {% if page.url == "/" and item.link == "/"%}
-                        style="color: red;"
-                    {% endif %}>
-                {% endif %}>
-                    {{ item.name }}
-                </a>
-                -->
                 <a href="{{ item.link }}"
                 {% if item.link == "/" %}
                     {% if page.url == "/" %}
