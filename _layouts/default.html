@@ -6,6 +6,12 @@
 			<meta name="mobile-web-app-capable" content="yes">
 			<meta name="apple-mobile-web-app-status-bar-style" content="default">
 			
+			<!-- Preconnect to external domains for better performance -->
+			<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+			<link rel="dns-prefetch" href="https://www.google-analytics.com">
+			<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+			<link rel="dns-prefetch" href="https://www.facebook.com">
+			
 			<!-- SEO Meta Tags -->
 			<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡学会 (Singapore Erhu Society) 成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
 			<meta name="keywords" content="新加坡二胡学会,Singapore Erhu Society,二胡,华乐,中国音乐,erhu,Chinese music,新加坡,Singapore{% if page.tags %},{{ page.tags | join: ',' }}{% endif %}">
@@ -95,14 +101,12 @@
 			<!-- Skip Navigation Link for Accessibility -->
 			<a href="#main-content" class="skip-link">跳转到主要内容 Skip to main content</a>
 			
-      			<div id="logoimage">
-      				<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" />
-      			</div> <!-- /#logoimage -->
-      			<div id="headimage">
-      				<img src="/files/header.jpg" alt="新加坡二胡学会" />
-      			</div> <!-- /#headimage -->
-      			
-      			<!-- Google analytics -->
+      		<div id="logoimage">
+      			<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" width="418" height="596" loading="eager" />
+      		</div> <!-- /#logoimage -->
+      		<div id="headimage">
+      			<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" />
+      		</div> <!-- /#headimage -->      			<!-- Google analytics -->
 			{% include analytics.html %}
 			
 			{% include navigation.html %}

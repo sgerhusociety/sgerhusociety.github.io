@@ -1,7 +1,17 @@
 name: Singapore Erhu Society Official Website
+url: "https://sgerhusociety.github.io"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: <!--more-->
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 collections:
   about:
     output: true
