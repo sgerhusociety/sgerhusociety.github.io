@@ -39,13 +39,13 @@ title: 新加坡二胡学会
 				<div class="post-header">
 					<span class="blog-in-home post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
 				</div>
-				<h3 class="post-title">
-					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-				</h3>
-				<div class="post-excerpt">
-					{{ post.content | split: site.excerpt_separator | first }}
-				</div>
-				<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">阅读全文 →</a>
+			<h3 class="post-title">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</h3>
+			<div class="post-excerpt">
+				{{ post.excerpt | strip_html | truncatewords: 50 }}
+			</div>
+			<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">阅读全文 →</a>
 			</article>
 			{% unless forloop.last %}
 				<hr class="post-divider">
