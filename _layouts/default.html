@@ -6,13 +6,16 @@
 			<meta name="mobile-web-app-capable" content="yes">
 			<meta name="apple-mobile-web-app-status-bar-style" content="default">
 			
-			<!-- Preconnect to external domains for better performance -->
-			<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-			<link rel="dns-prefetch" href="https://www.google-analytics.com">
-			<link rel="preconnect" href="https://www.facebook.com" crossorigin>
-			<link rel="dns-prefetch" href="https://www.facebook.com">
-			
-			<!-- SEO Meta Tags -->
+		<!-- Preconnect to external domains for better performance -->
+		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+		<link rel="dns-prefetch" href="https://www.google-analytics.com">
+		<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+		<link rel="dns-prefetch" href="https://www.facebook.com">
+		
+		<!-- Preload critical resources -->
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<link rel="preload" href="/files/logo.webp" as="image" type="image/webp">
+		<link rel="preload" href="/files/header.webp" as="image" type="image/webp">			<!-- SEO Meta Tags -->
 			<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡学会 (Singapore Erhu Society) 成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
 			<meta name="keywords" content="新加坡二胡学会,Singapore Erhu Society,二胡,华乐,中国音乐,erhu,Chinese music,新加坡,Singapore{% if page.tags %},{{ page.tags | join: ',' }}{% endif %}">
 			<meta name="author" content="Singapore Erhu Society">
@@ -111,13 +114,10 @@
       			<picture>
       				<source srcset="/files/header.webp" type="image/webp">
       				<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" />
-      			</picture>
-      		</div> <!-- /#headimage -->      			<!-- Google analytics -->
-			{% include analytics.html %}
+			</picture>
+		</div> <!-- /#headimage -->
 			
-			{% include navigation.html %}
-			
-			<main id="main-content" role="main" class="container">
+			{% include navigation.html %}			<main id="main-content" role="main" class="container">
 			
 			{{ content }}
 			
@@ -166,29 +166,41 @@
 				<div class="footer-bottom">
 					<p>&copy; 1995-2025 新加坡二胡学会 Singapore Erhu Society. All rights reserved.</p>
 					<p class="footer-credits">成立于1995年 | Established in 1995</p>
-				</div>
-			</footer>
-			
-			<script>
-				// Back to Top Button functionality
+			</div>
+		</footer>
+		
+		<!-- Google analytics (moved to end for better performance) -->
+		{% include analytics.html %}
+		
+		<script>
+			// Back to Top Button functionality - optimized with passive listener and debounce
+			(function() {
 				const backToTopButton = document.getElementById('backToTop');
+				let ticking = false;
 				
-				// Show/hide button based on scroll position
-				window.addEventListener('scroll', function() {
+				function updateBackToTop() {
 					if (window.pageYOffset > 300) {
 						backToTopButton.classList.add('show');
 					} else {
 						backToTopButton.classList.remove('show');
 					}
-				});
+					ticking = false;
+				}
 				
-				// Scroll to top when clicked
+				window.addEventListener('scroll', function() {
+					if (!ticking) {
+						window.requestAnimationFrame(updateBackToTop);
+						ticking = true;
+					}
+				}, { passive: true });
+				
 				backToTopButton.addEventListener('click', function() {
 					window.scrollTo({
 						top: 0,
 						behavior: 'smooth'
 					});
 				});
-			</script>
-		</body>
-	</html>
+			})();
+		</script>
+	</body>
+</html>

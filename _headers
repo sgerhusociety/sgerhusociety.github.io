@@ -4,18 +4,27 @@
 
 /files/*.jpg
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/files/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
 
 /files/*.png
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
 
 /files/*.pdf
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/pdf
 
 /*.ico
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/x-icon
 
 /*.png
   Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
 
 # Cache HTML for 1 hour
 /*.html

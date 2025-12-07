@@ -1723,6 +1723,8 @@ hr[style*="border-width:2px"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    will-change: transform, opacity;
+    contain: layout style paint;
 }
 
 .back-to-top.show {
