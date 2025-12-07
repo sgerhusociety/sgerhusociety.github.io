@@ -649,6 +649,16 @@ figcaption {
     width: 100% !important; 
 }
 
+.fb-video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.fb-video-wrapper .fb-video {
+    max-width: 100%;
+}
+
 .PageNavigation {
     font-size: 16px;
     display: flex;
