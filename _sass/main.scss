@@ -11,6 +11,9 @@ body {
     /* Prevent text size adjustment on orientation change */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    /* Performance: Enable GPU acceleration */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 /* Skip Navigation Link for Accessibility */
@@ -45,6 +48,11 @@ img {
     /* Prevent image dragging on mobile */
     -webkit-user-drag: none;
     user-select: none;
+    /* Performance optimizations */
+    max-width: 100%;
+    height: auto;
+    /* Prevent layout shift with aspect-ratio fallback */
+    vertical-align: middle;
 }
 
 .container {
@@ -59,6 +67,11 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* Performance: Use will-change for sticky positioning */
+    will-change: transform;
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 nav ul {

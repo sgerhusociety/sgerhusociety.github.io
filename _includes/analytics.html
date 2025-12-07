@@ -1,9 +1,18 @@
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) - Optimized loading -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0K1ERQGP7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-S0K1ERQGP7');
+  gtag('config', 'G-S0K1ERQGP7', {
+    'send_page_view': false
+  });
+  // Send pageview after page is interactive
+  if (document.readyState === 'complete') {
+    gtag('event', 'page_view');
+  } else {
+    window.addEventListener('load', function() {
+      gtag('event', 'page_view');
+    });
+  }
 </script>

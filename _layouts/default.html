@@ -7,7 +7,9 @@
 			<meta name="apple-mobile-web-app-status-bar-style" content="default">
 			
 		<!-- Preconnect to external domains for better performance -->
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+		<link rel="preconnect" href="https://www.googletagmanager.com">
+		<link rel="preconnect" href="https://www.google-analytics.com">
+		<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 		<link rel="dns-prefetch" href="https://www.google-analytics.com">
 		<link rel="preconnect" href="https://www.facebook.com" crossorigin>
 		<link rel="dns-prefetch" href="https://www.facebook.com">
@@ -107,13 +109,13 @@
       		<div id="logoimage">
       			<picture>
       				<source srcset="/files/logo.webp" type="image/webp">
-      				<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" width="418" height="596" loading="eager" />
+      				<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" width="418" height="596" loading="eager" fetchpriority="high" decoding="async" />
       			</picture>
       		</div> <!-- /#logoimage -->
       		<div id="headimage">
       			<picture>
       				<source srcset="/files/header.webp" type="image/webp">
-      				<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" />
+      				<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" fetchpriority="high" decoding="async" />
 			</picture>
 		</div> <!-- /#headimage -->
 			
@@ -176,6 +178,8 @@
 			// Back to Top Button functionality - optimized with passive listener and debounce
 			(function() {
 				const backToTopButton = document.getElementById('backToTop');
+				if (!backToTopButton) return;
+				
 				let ticking = false;
 				
 				function updateBackToTop() {
