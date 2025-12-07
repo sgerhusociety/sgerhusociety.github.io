@@ -35,18 +35,21 @@ title: 新加坡二胡学会
 
 	{% for post in site.posts limit:10 %}
 		{% if post.excerpt %}
-			<article class="post-preview">
-				<div class="post-header">
-					<span class="blog-in-home post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
-				</div>
+		<article class="post-preview">
+			<div class="post-header">
+				<span class="blog-in-home post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
+			</div>
 			<h3 class="post-title">
 				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 			</h3>
 			<div class="post-excerpt">
-				{{ post.excerpt | strip_html | truncatewords: 50 }}
+				{% assign content_before_separator = post.content | split: site.excerpt_separator | first %}
+				{% assign content_without_facebook = content_before_separator | replace: 'fb-video', 'fb-video-removed' %}
+				{% assign content_without_videos = content_without_facebook | replace: '<iframe', '<iframe-removed' %}
+				{{ content_without_videos | truncatewords: 100 }}
 			</div>
 			<a class="read-more" href="{{ site.baseurl }}{{ post.url }}">阅读全文 →</a>
-			</article>
+		</article>
 			{% unless forloop.last %}
 				<hr class="post-divider">
 			{% endunless %}
