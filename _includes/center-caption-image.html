@@ -2,9 +2,6 @@
     <img src="{{ include.src }}" 
          alt="{{ include.caption }}" 
          class="center-image" 
-         loading="lazy"
-         {% if include.width %}width="{{ include.width }}"{% else %}width="800"{% endif %}
-         {% if include.height %}height="{{ include.height }}"{% else %}height="600"{% endif %}
-         style="aspect-ratio: {{ include.width | default: 800 }} / {{ include.height | default: 600 }}" />
+         loading="lazy" />
     <figcaption>{{ include.caption }}</figcaption>
 </figure>

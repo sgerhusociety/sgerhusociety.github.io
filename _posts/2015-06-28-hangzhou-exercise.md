@@ -10,7 +10,7 @@ date: 2015-06-28
 
 小汇报开始之前，选手们进行抽签决定出场顺序。
 
-![](/files/hz_exercise/1.webp){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/hz_exercise/1.webp" caption="抽签决定出场顺序" %}
 
 选手们先进行了第一轮复赛曲目的演奏，每人限时六分钟。
 
@@ -38,13 +38,13 @@ date: 2015-06-28
 
 选手们演奏完毕之后，王方亮老师对选手们的发挥进行了详细的点评，并指导了选手们如何在台上克服紧张心理以及平时应该如何更有效地练琴，使在场听众——其他二胡学会的成员也能从中获益
 
-![](/files/hz_exercise/wanglaoshi.webp){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/hz_exercise/wanglaoshi.webp" caption="王方亮老师进行点评" %}
 
-![](/files/hz_exercise/wanglaoshi-2.webp){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/hz_exercise/wanglaoshi-2.webp" caption="王方亮老师继续点评" %}
 
 在场的会员们也参与进了讨论，为选手们提出许多宝贵的意见。特别是我们的老会员，亦是选手们的大师姐韩咏梅女士，现任新加坡《联合早报》新闻总编辑室主任，也曾经是1996年新加坡华乐大赛二胡组冠军。她从演奏技术上给了选手们很专业的意见。
 
-![](/files/hz_exercise/together.webp){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/hz_exercise/together.webp" caption="会员们参与讨论" %}
 
 离杭州大赛还有一个多月的时间啦！希望选手们在接下来的日子里继续努力，发挥出自己最好的水平。比赛的结果是其次的，但是在此过程中逐渐提高自己的水平，同时更加热爱二胡这门艺术。王会长在结尾说得好：大家都是业余爱好者，走到一起”玩“二胡，虽然要以专业的态度和要求来对待学习的过程，但是最重要的是对二胡的热情。
 

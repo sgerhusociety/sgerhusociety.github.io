@@ -3,7 +3,7 @@ layout: post
 title: "《琴缘2025》音乐会"
 date: 2025-04-06
 ---
-![](/files/2025-qin-yuan-concert/4.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/4.jpg" caption="琴缘2025音乐会" %}
 
 新加坡二胡学会很荣幸再次受到Our Tampines Hub邀请，于4月6日成功举办《琴缘2025》。Festive Arts Theatre座无虚席，《音乐的回响：经典传承与流行共鸣》将传统与创意完美结合，带来了一场引人入胜的声音与文化盛宴！✨
 <!--more-->
@@ -22,14 +22,14 @@ We are grateful to Our Tampines Hub for this opportunity and to all the friends 
 
 Looking forward to seeing everyone again!
 
-![](/files/2025-qin-yuan-concert/2.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/2.jpg" caption="琴缘2025音乐会" %}
 
-![](/files/2025-qin-yuan-concert/3.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/3.jpg" caption="琴缘2025音乐会" %}
 
-![](/files/2025-qin-yuan-concert/1.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/1.jpg" caption="琴缘2025音乐会" %}
 
-![](/files/2025-qin-yuan-concert/5.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/5.jpg" caption="琴缘2025音乐会" %}
 
-![](/files/2025-qin-yuan-concert/6.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/6.jpg" caption="琴缘2025音乐会" %}
 
-![](/files/2025-qin-yuan-concert/7.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/7.jpg" caption="琴缘2025音乐会" %}
