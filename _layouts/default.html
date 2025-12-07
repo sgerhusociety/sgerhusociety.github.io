@@ -23,15 +23,15 @@
 		<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 		<meta property="og:title" content="{% if page.title %}{{ page.title }} - 新加坡二胡学会{% else %}新加坡二胡学会 Singapore Erhu Society{% endif %}">
 		<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡学会成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
-		<meta property="og:image" content="{{ site.url }}/files/{% if page.image %}{{ page.image }}{% else %}og-image.png{% endif %}">
+		<meta property="og:image" content="{{ site.url }}/files/{% if page.image %}{{ page.image }}{% else %}og-image.webp{% endif %}">
 		<meta property="og:image:width" content="584">
 		<meta property="og:image:height" content="268">
-		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:type" content="image/webp">
 		<meta property="og:locale" content="zh_CN">
 			<meta property="og:locale:alternate" content="en_US">
 			<meta property="og:site_name" content="新加坡二胡学会 Singapore Erhu Society">
 			{% if page.layout == 'post' %}
-			<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+			<meta property="article:published_time" ge.date | date_to_xmlschema }}">
 			<meta property="article:author" content="Singapore Erhu Society">
 			{% if page.tags %}
 			{% for tag in page.tags %}
@@ -45,7 +45,7 @@
 		<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 		<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - 新加坡二胡学会{% else %}新加坡二胡学会 Singapore Erhu Society{% endif %}">
 		<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}新加坡二胡学会成立于1995年，致力于推广和传承二胡艺术，促进新加坡华乐文化发展。{% endif %}">
-		<meta name="twitter:image" content="{{ site.url }}/files/{% if page.image %}{{ page.image }}{% else %}og-image.png{% endif %}">			<!-- Structured Data (JSON-LD) -->
+		<meta name="twitter:image" content="{{ site.url }}/files/{% if page.image %}{{ page.image }}{% else %}og-image.webp{% endif %}">			<!-- Structured Data (JSON-LD) -->
 			<script type="application/ld+json">
 			{
 			  "@context": "https://schema.org",
@@ -67,9 +67,9 @@
 			      "url": "{{ site.url }}/assets/images/logo.png"
 			    }
 			  },
-			  "image": "{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}header.jpg{% endif %}",
-			  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"
-			  {% else %}
+		  "image": "{{ site.url }}/assets/images/{% if page.image %}{{ page.image }}{% else %}header.jpg{% endif %}",
+		  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"
+		  {% else %}
 		  "name": "Singapore Erhu Society",
 		  "alternateName": "新加坡二胡学会",
 		  "url": "{{ site.url }}",
@@ -102,10 +102,16 @@
 			<a href="#main-content" class="skip-link">跳转到主要内容 Skip to main content</a>
 			
       		<div id="logoimage">
-      			<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" width="418" height="596" loading="eager" />
+      			<picture>
+      				<source srcset="/files/logo.webp" type="image/webp">
+      				<img src="/files/logo.jpg" alt="新加坡二胡学会 Logo" width="418" height="596" loading="eager" />
+      			</picture>
       		</div> <!-- /#logoimage -->
       		<div id="headimage">
-      			<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" />
+      			<picture>
+      				<source srcset="/files/header.webp" type="image/webp">
+      				<img src="/files/header.jpg" alt="新加坡二胡学会" width="2048" height="450" loading="eager" />
+      			</picture>
       		</div> <!-- /#headimage -->      			<!-- Google analytics -->
 			{% include analytics.html %}
 			

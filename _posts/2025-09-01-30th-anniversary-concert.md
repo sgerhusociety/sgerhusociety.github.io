@@ -3,7 +3,10 @@ layout: post
 title: "《琴韵三十载 · 薪火传新声》二胡学会30周年音乐会预告"
 date: 2025-09-01
 ---
-![](/files/2025-12-30th-anniversary/30th_Anniversary_Concert.jpg){:max-width=70% .center-image}
+<picture>
+  <source srcset="/files/2025-12-30th-anniversary/30th_Anniversary_Concert.webp" type="image/webp">
+  <img src="/files/2025-12-30th-anniversary/30th_Anniversary_Concert.jpg" alt="30th Anniversary Concert" style="max-width: 70%; display: block; margin: 0 auto;" width="1131" height="1600" loading="lazy">
+</picture>
 
 1995年11月17日，《联合早报》以 "二胡学会首场音乐会" 为题，记录下二胡学会在新加坡维多利亚音乐厅的首次亮相。
 
