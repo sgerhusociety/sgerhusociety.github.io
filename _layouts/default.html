@@ -183,13 +183,17 @@
 				let ticking = false;
 				
 				function updateBackToTop() {
-					if (window.pageYOffset > 300) {
+					const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+					if (scrollPos > 300) {
 						backToTopButton.classList.add('show');
 					} else {
 						backToTopButton.classList.remove('show');
 					}
 					ticking = false;
 				}
+				
+				// Check initial scroll position
+				updateBackToTop();
 				
 				window.addEventListener('scroll', function() {
 					if (!ticking) {

@@ -11,9 +11,7 @@ body {
     /* Prevent text size adjustment on orientation change */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    /* Performance: Enable GPU acceleration */
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /* Note: transform removed to fix position:fixed elements like back-to-top button */
 }
 
 /* Skip Navigation Link for Accessibility */
@@ -69,9 +67,6 @@ nav {
     z-index: 100;
     /* Performance: Use will-change for sticky positioning */
     will-change: transform;
-    /* Hardware acceleration */
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 
 nav ul {
@@ -1720,50 +1715,50 @@ hr[style*="border-width:2px"] {
 
 /* Back to Top Button */
 .back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: #8b4513;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    will-change: transform, opacity;
-    contain: layout style paint;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: #8b4513 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 50% !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: auto !important;
 }
 
 .back-to-top.show {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
 }
 
 .back-to-top:hover {
-    background: #a0522d;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    background: #a0522d !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3) !important;
 }
 
 .back-to-top:active {
-    transform: translateY(-1px);
+    transform: translateY(-1px) !important;
 }
 
 @media (max-width: 768px) {
     .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 20px !important;
     }
 }
