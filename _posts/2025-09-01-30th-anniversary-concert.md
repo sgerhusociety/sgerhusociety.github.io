@@ -26,6 +26,8 @@ date: 2025-09-01
 
 🎟️ **立即购票 (SISTIC)**：[https://sistic.com.sg/events/erhu1225](https://sistic.com.sg/events/erhu1225)
 
+📖 **音乐会节目册**：[下载 PDF](/files/2025-12-30th-anniversary/2025-anniversary-concert-booklet.pdf)
+
 ---
 
 ## Three Decades of Erhu Resonance – A New Voice Lights the Flame
@@ -47,6 +49,8 @@ Themed "Three Decades of Erhu Resonance – A New Voice Lights the Flame", the c
 📍 **Venue**：SOTA Concert Hall
 
 🎟️ **Book Tickets (SISTIC)**：[https://sistic.com.sg/events/erhu1225](https://sistic.com.sg/events/erhu1225)
+
+📖 **Concert Programme Booklet**：[Download PDF](/files/2025-12-30th-anniversary/2025-anniversary-concert-booklet.pdf)
 
 ---
 
