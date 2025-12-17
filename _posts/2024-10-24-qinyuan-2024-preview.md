@@ -3,7 +3,7 @@ layout: post
 title: "《琴缘2024》音乐会预告"
 date: 2024-10-24
 ---
-![](/files/2024-qinyuan-concert/anoucement.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2024-qinyuan-concert/anoucement.jpg" maxWidth="70%" %}
 
 The Erhu Society concert features Erhu and Guzheng solos, ensembles, and dance, blending traditional Oriental music with modern elements.
 <!--more-->

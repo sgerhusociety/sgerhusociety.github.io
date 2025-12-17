@@ -25,4 +25,4 @@ date: 1998-07-18
 
 来源：《联合早报》 1998年7月18日 （早报副刊 艺苑）
 
-![](/files/huang-an-yuan-concert.png){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/huang-an-yuan-concert.png" maxWidth="70%" %}

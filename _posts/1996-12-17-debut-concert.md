@@ -3,7 +3,7 @@ layout: post
 title: "Erhu Society Stages Debut Concert"
 date: 1996-12-17
 ---
-![](/files/debut-concert.png){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/debut-concert.png" maxWidth="70%" %}
 
 **Wong Chee Meng**
 
