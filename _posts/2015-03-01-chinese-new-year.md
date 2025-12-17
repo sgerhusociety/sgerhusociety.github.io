@@ -18,8 +18,8 @@ date: 2015-03-01
 
 除了二胡独奏，学会也特地邀请了Uncle Jimbo为小会员们带来了精彩的魔术表演和游戏环节。在娱乐与美食之余，新老会员们更是互相分享和交流学二胡的经历与经验。大家都非常享受这难得的欢聚。
 
-![](/files/2015-chinese-new-year/4.jpg){:max-width=50% .center-image}
+{% include center-caption-image.html src="/files/2015-chinese-new-year/4.jpg" maxWidth="50%" %}
 
-![](/files/2015-chinese-new-year/5.jpg){:max-width=50% .center-image}
+{% include center-caption-image.html src="/files/2015-chinese-new-year/5.jpg" maxWidth="50%" %}
 
 在此，新加坡二胡学会恭祝大家新春快乐，合家幸福，万事如意！

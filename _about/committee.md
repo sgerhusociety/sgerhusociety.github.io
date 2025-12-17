@@ -4,7 +4,7 @@ title: 执委
 ---
 ## 执委
 
-![Committee](/files/committee/1.jpg){:max-width="70%" .center-image}
+{% include center-caption-image.html src="/files/committee/1.jpg" maxWidth="70%" %}
 
 - 会长：王方亮
 - 常务副会长：翁凤玫

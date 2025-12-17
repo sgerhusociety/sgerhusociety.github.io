@@ -660,14 +660,28 @@ figcaption {
     width: 100% !important; 
 }
 
+#fb-root {
+    display: none;
+}
+
 .fb-video-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0 0;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 100%;
 }
 
 .fb-video-wrapper .fb-video {
+    display: inline-block;
     max-width: 100%;
+    margin: 0 auto;
+}
+
+.fb-video-wrapper iframe,
+.fb-video-wrapper span,
+.fb-video-wrapper > * {
+    margin: 0 !important;
+    display: block !important;
 }
 
 .PageNavigation {

@@ -3,7 +3,7 @@ layout: post
 title: "板胡演奏家沈诚挥洒琴韵"
 date: 2002-12-25
 ---
-![](/files/shencheng.png){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/shencheng.png" maxWidth="70%" %}
 
 中国弓弦乐器演奏大师刘明源得意门生，板胡演奏家沈诚受新加坡二胡学会之邀来新，在"琴韵"演奏会演出。
 <!--more-->

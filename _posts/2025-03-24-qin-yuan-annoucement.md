@@ -3,7 +3,7 @@ layout: post
 title: "《琴缘2025》音乐会预告"
 date: 2025-03-24
 ---
-![](/files/2025-qin-yuan-concert/annoucement.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-qin-yuan-concert/annoucement.jpg" maxWidth="70%" %}
 
 Join us for Echoes of Music: Classical Heritage and Popular Resonance on 6 April, 7.30pm at Festive Arts Theatre! Brought to you by Er-Hu Society Singapore.
 <!--more-->

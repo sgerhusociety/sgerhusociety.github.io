@@ -14,12 +14,12 @@ date: 2014-03-16
 **花好月圆**
 {% include youtubePlayer.html id="1kd7k-iBNBU" %}
 
-![](/files/chinese-music-concert/1.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/chinese-music-concert/1.jpg" maxWidth="70%" %}
 
-![](/files/chinese-music-concert/2.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/chinese-music-concert/2.jpg" maxWidth="70%" %}
 
-![](/files/chinese-music-concert/3.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/chinese-music-concert/3.jpg" maxWidth="70%" %}
 
-![](/files/chinese-music-concert/4.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/chinese-music-concert/4.jpg" maxWidth="70%" %}
 
-![](/files/chinese-music-concert/5.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/chinese-music-concert/5.jpg" maxWidth="70%" %}

@@ -9,7 +9,7 @@ date: 2024-06-19
 
 有兴趣出席讲座的朋友，请点以上的链接填写表格。
 
-![](/files/2024-cheng-cheng-seminar/cheng-cheng.jpeg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2024-cheng-cheng-seminar/cheng-cheng.jpeg" maxWidth="70%" %}
 <!--more-->
 
 ### 活动详情

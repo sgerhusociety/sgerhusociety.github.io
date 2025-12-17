@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "【艺评】创新呈现方式为二胡演奏增色——“琴缘2024”音乐会"
+title: '【艺评】创新呈现方式为二胡演奏增色——"琴缘2024"音乐会'
 date: 2024-12-11
 ---
-![](/files/2024-qinyuan-concert/zaobao-report.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2024-qinyuan-concert/zaobao-report.jpg" %}
 
 伴随着精湛的演绎，观众们时而驰骋在蒙古草原，时而泛舟于江南的小桥流水间，时而感受北方丰收的喜悦……一曲听毕，仿佛踏遍中国大江南北，直呼过瘾。
 <!--more-->

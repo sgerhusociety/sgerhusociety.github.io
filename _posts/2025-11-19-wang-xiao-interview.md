@@ -3,7 +3,7 @@ layout: post
 title: "王啸首登狮城舞台 为古老二胡开辟现代新声"
 date: 2025-11-19
 ---
-![](/files/2025-12-30th-anniversary/wang-xiao.jpg){:max-width=70% .center-image}
+{% include center-caption-image.html src="/files/2025-12-30th-anniversary/wang-xiao.jpg" %}
 
 备受瞩目的中国青年二胡演奏家王啸，用琴弓在传统与现代之间开辟新天地。她既在舞台上传承演绎秦派韵味，也大胆尝试现代声响实验，与此同时致力推动二胡教育创新，让年轻一代通过熟悉的旋律亲近这件古老乐器。下个月她将首次登上狮城舞台，在二胡学会30周年音乐会上献艺。
 
