@@ -1,5 +1,5 @@
 name: Singapore Erhu Society Official Website
-url: "https://sgerhusociety.github.io"
+url: "https://sgerhusociety.com"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: <!--more-->
